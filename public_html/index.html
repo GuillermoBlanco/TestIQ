@@ -1,0 +1,100 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="button"><a href="#title">Inicio</a></div>
+            <div class="button"><a href="#Pregunta1">Pregunta 1</a></div>
+            <div class="button"><a href="#Pregunta2">Pregunta 2</a></div>
+            <div class="button"><a href="#Pregunta3">Pregunta 3</a></div>
+            <div class="button"><a href="#Pregunta4">Pregunta 4</a></div>
+            <div class="button"><a href="#Pregunta5">Pregunta 5</a></div>
+            <div class="button"><a href="#Pregunta6">Pregunta 6</a></div>
+            <div class="button"><a href="#Pregunta7">Pregunta 7</a></div>
+            <div class="button"><a href="#Pregunta8">Pregunta 8</a></div>
+            <div class="button"><a href="#Pregunta9">Pregunta 9</a></div>
+            <div class="button"><a href="#Pregunta10">Pregunta 10</a></div>
+            <div class="button"><a href="#Pregunta11">Pregunta 11</a></div>
+            <div class="button" onclick="evalua()">Ver</div>
+        </nav>
+        <div id="title"><h1>Test de IQ</h1></div>
+        <div id="Pregunta1">Pregunta 1: Indica con un click Cual es roja
+            <div class="button" onclick="valida(this, 1,1)" tagName="Verde" style="color:red">Verde</div>
+            <div class="button" onclick="valida(this, 1,2)" tagName="Amarillo" style="color:green">Amarillo</div>
+            <div class="button" onclick="valida(this, 1,3)" tagName="Rojo" style="color:blue">Rojo</div>
+            <div class="button" onclick="valida(this, 1,4)" tagName="Violeta" style="color:yellow">Violeta</div>
+            <div class="button" onclick="valida(this, 1,5)" tagName="Azul" style="color:violet">Azul</div>
+        </div>
+        <div id="Pregunta2">Pregunta 2: 1, 3, 5, 7, ...
+            <div class="button" onclick="valida(this, 2,1)" tagName="7">7</div>
+            <div class="button" onclick="valida(this, 2,2)" tagName="8">8</div>
+            <div class="button" onclick="valida(this, 2,3)" tagName="9">9</div>
+            <div class="button" onclick="valida(this, 2,4)" tagName="10">10</div>
+        </div>
+        <div id="Pregunta3">Pregunta 3: A es a C lo que 1 es a..
+            <div class="button" onclick="valida(this, 3,1)" tagName="1">1</div>
+            <div class="button" onclick="valida(this, 3,2)" tagName="2">2</div>
+            <div class="button" onclick="valida(this, 3,3)" tagName="3">3</div>
+            <div class="button" onclick="valida(this, 3,4)" tagName="4">4</div>
+        </div>
+        <div id="Pregunta4">Pregunta 4:</br>
+            <img src="img/q01-300x44.jpg"/>
+            <div class="button" onclick="valida(this, 4,1)">1</div>
+            <div class="button" onclick="valida(this, 4,2)">2</div>
+            <div class="button" onclick="valida(this, 4,3)">3</div>
+            <div class="button" onclick="valida(this, 4,4)">4</div>
+        </div>
+        <div id="Pregunta5">Pregunta 5: Si tenés dos monedas y maría tiene cuatro</br> monedas más que vos. ¿Cuántas monedas tienen en total?
+            <div class="button" onclick="valida(this, 5,1)">4</div>
+            <div class="button" onclick="valida(this, 5,2)">6</div>
+            <div class="button" onclick="valida(this, 5,3)">8</div>
+            <div class="button" onclick="valida(this, 5,4)">10</div>
+        </div>
+        <div id="Pregunta6">Pregunta 6: 66 es a 33 como DD es a..
+            <div class="button" onclick="valida(this, 6,1)">AA</div>
+            <div class="button" onclick="valida(this, 6,2)">BB</div>
+            <div class="button" onclick="valida(this, 6,3)">DD</div>
+            <div class="button" onclick="valida(this, 6,4)">11</div>
+        </div>
+        <div id="Pregunta7">Pregunta 7: Nemo es a Omen como Rama es a..
+            <div class="button" onclick="valida(this, 7,1)">Asar</div>
+            <div class="button" onclick="valida(this, 7,2)">Amar</div>
+            <div class="button" onclick="valida(this, 7,3)">Arma</div>
+            <div class="button" onclick="valida(this, 7,4)">Hoja</div>
+        </div>
+        <div id="Pregunta8">Pregunta 8: 1, 4, 9, 16, 25..
+            <div class="button" onclick="valida(this, 8,1)">31</div>
+            <div class="button" onclick="valida(this, 8,2)">32</div>
+            <div class="button" onclick="valida(this, 8,3)">35</div>
+            <div class="button" onclick="valida(this, 8,4)">36</div>
+        </div>
+        <div id="Pregunta9">Pregunta 9:</br>
+            <img src="img/q02-300x44.jpg"/>
+            <div class="button" onclick="valida(this, 9,1)">a</div>
+            <div class="button" onclick="valida(this, 9,2)">b</div>
+            <div class="button" onclick="valida(this, 9,3)">c</div>
+            <div class="button" onclick="valida(this, 9,4)">d</div>
+        </div>
+        <div id="Pregunta10">Pregunta 10: 6+2=26 como 3+7 es igual a..
+            <div class="button" onclick="valida(this, 10,1)">17</div>
+            <div class="button" onclick="valida(this, 10,2)">39</div>
+            <div class="button" onclick="valida(this, 10,3)">73</div>
+            <div class="button" onclick="valida(this, 10,4)">79</div>
+        </div>
+        <div id="Pregunta11">Pregunta 11: Cuchara es a Comida como Hacha es a..
+            <div class="button" onclick="valida(this, 10,1)">Piedra</div>
+            <div class="button" onclick="valida(this, 10,2)">Madera</div>
+            <div class="button" onclick="valida(this, 10,3)">Diamante</div>
+            <div class="button" onclick="valida(this, 10,4)">Hombre</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+/* 
+    Document   : style
+    Created on : 11-nov-2014, 18:53:53
+    Author     : Guillermo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    
+}
+nav {
+    position: fixed;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: lightyellow;
+    text-align: center;
+    display: block;
+    width: 110px;
+    box-shadow: 3px 3px 10px black;
+}
+
+div {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: lightyellow;
+    text-align: center;
+    display: block;
+    width: 400px;
+    margin:  auto;
+    margin-bottom: 1410px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.button {
+    display: block;
+    clear: right;
+    margin: 10px auto 10px auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    width: 90px;
+    box-shadow: 2px 2px 3px black;
+    
+}
